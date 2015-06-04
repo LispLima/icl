@@ -6,7 +6,7 @@
   :name "icl"
   :author '("Mario Rodas"
             "Javier Olaechea <pirata@gmail>")
-  :description "Junyper kernel for Common Lisp"
+  :description "Jupyter kernel for Common Lisp"
   :version (:read-file-from "version.lisp-expr")
   :license "<3"
   :serial t
