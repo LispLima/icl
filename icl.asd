@@ -10,7 +10,8 @@
   :version (:read-file-from "version.lisp-expr")
   :license "<3"
   :serial t
-  :pathname "src"
   :depends-on ()
-  :components ()
+  :components ((:module "src"
+                :components
+                ((:file "main"))))
   :in-order-to ((test-op (load-op :icl-tests))))
