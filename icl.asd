@@ -13,6 +13,4 @@
   :pathname "src"
   :depends-on ()
   :components ()
-  :in-order-to ((test-op (load-op :icl-tests)))
-  :perfom (test-op (o c)
-                   (asdf/package:symbol-call :prove 'run icl-tests)))
+  :in-order-to ((test-op (load-op :icl-tests))))
