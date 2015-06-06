@@ -1,0 +1,17 @@
+language: common-lisp
+sudo: required
+
+env:
+  matrix:
+    - LISP=sbcl
+    - LISP=ccl
+
+matrix:
+  allow_failures:
+    - env: LISP=ccl
+
+before_install:
+  - curl -fsSL https://github.com/snmsts/roswell/raw/release/scripts/travis-install.sh | sh
+
+script:
+  - make
